@@ -8,8 +8,8 @@ const userInputHTML = (input) => {
   p.appendChild(textnode);
 }
 
-const sentToServer = () => {
-  const input = document.querySelector('#userInput').value;
+const sendToServer = () => {
+  const input = document.querySelector('#userinput').value;
   userInputHTML(input);
   fetch('http://localhost:3000/secret', {
     method: 'POST',
